@@ -1,6 +1,6 @@
 # NYC Taxi and Limousine Yellow Dataset Ingestion
 
-## Objective:
+## Objective
 
 - Ingest the dataset.
 - Summarize the mean/median cost, prices, and passenger counts.
