@@ -133,9 +133,9 @@ prefect agent start --work-queue 'default'
 #### Run the Flow
 
 - Visit [http://localhost:4200](http://127.0.0.1:4200) to open the Prefect
-  Dashboard and click on "Deployment"
+  Dashboard and click on "Deployments"
   <div style="margin-top: 10px; margin-bottom: 20px"><img src="./images/step-01.png" width="900px" height="auto"/></div>
-- Click on "NYC Taxi Data Ingestion".
+- Click on "NYC Taxi Dataset Ingestion".
   <div style="margin-top: 10px; margin-bottom: 20px"><img src="./images/step-02.png" width="900px" height="auto"/></div>
 - Click on "Run" and then on "Quick Run" to trigger the flow.
   <div style="margin-top: 10px;"><img src="./images/step-03.png" width="900px" height="auto"/></div>
