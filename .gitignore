@@ -2,6 +2,8 @@
 notes.ipynb
 notes.md
 /data/result*
+/images/backup
+data_ingestion_flow-deployment.yaml
 
 ## Created by https://www.toptal.com/developers/gitignore/api/jupyternotebooks,python,macos,linux,windows
 ##  Edit at https://www.toptal.com/developers/gitignore?templates=jupyternotebooks,python,macos,linux,windows
