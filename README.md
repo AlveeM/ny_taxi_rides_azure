@@ -6,8 +6,8 @@
 - [Dataset](#dataset)
 - [Environment Setup](#environment-setup)
 - [Running Locally with Prefect and Spark](#running-locally-with-prefect-and-spark)
-- [Running Locally with Jupyter Notebook](#running-locally-jupyter-notebook)
-- [Scalability & Performance](#scalability-and-performance)
+- [Running Locally with Jupyter Notebook](#running-locally-with-jupyter-notebook)
+- [Scalability and Performance](#scalability-and-performance)
 - [Data Cleaning Notes](#data-cleaning-notes)
 
 ## Objective
