@@ -1,5 +1,15 @@
 # NYC Taxi and Limousine Yellow Dataset Ingestion
 
+## Table of Contents
+
+- [Objective](#objective)
+- [Dataset](#dataset)
+- [Environment Setup](#environment-setup)
+- [Running Locally with Prefect and Spark](#running-locally-with-prefect-and-spark)
+- [Running Locally with Jupyter Notebook](#running-locally-jupyter-notebook)
+- [Scalability & Performance](#scalability-and-performance)
+- [Data Cleaning Notes](#data-cleaning-notes)
+
 ## Objective
 
 - Ingest the dataset.
@@ -38,7 +48,36 @@
 | puYear               | integer   | True     |
 | puMonth              | integer   | True     |
 
-## Running Locally
+## Environment Setup
+
+You will need `conda` to activate the environment. The recommended way to do
+this is by installing [miniforge](https://github.com/conda-forge/miniforge).
+I'll be listing commands for Mac but the link should have guides on installing
+it for other operating systems.
+
+```plain
+brew install miniforge
+conda init
+```
+
+Then, close your terminal and open a new terminal session.
+
+Once, `conda` is installed, run the following commands in your terminal from the
+root of this repository to create the environment used for this repository:
+
+```plain
+conda env create
+conda activate nyc_taxi_ride_alvee
+```
+
+Note that you may have to open multiple terminal tabs or windows and activate
+the environment in each of them since there will be multiple servers started.
+
+In addition to `conda`, I have also installed `Spark 3.5.0` on my host machine.
+You won't be able to create a standalone local cluster without installing it.
+You can [install spark from here](https://spark.apache.org/downloads.html).
+
+## Running Locally with Prefect and Spark
 
 ### Local Spark Cluster
 
@@ -99,6 +138,14 @@ prefect agent start --work-queue 'default'
   <div style="margin-top: 10px; margin-bottom: 20px"><img src="./images/step-02.png" width="900px" height="auto"/></div>
 - Click on "Run" and then on "Quick Run" to trigger the flow.
   <div style="margin-top: 10px;"><img src="./images/step-03.png" width="900px" height="auto"/></div>
+
+## Running Locally with Jupyter Notebook
+
+After activating the environment with `conda`, open the `exploration.ipynb` file
+and click on "Run All" to populate the `data/result_exploration` folder with the
+output data.
+
+It will also read the local files in the same notebook.
 
 ## Scalability & Performance
 
