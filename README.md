@@ -15,6 +15,7 @@
 - Ingest the dataset.
 - Summarize the mean/median cost, prices, and passenger counts.
 - Aggregate by payment type, year, month.
+- Save the result.
 
 ## Dataset
 
