@@ -166,4 +166,4 @@ It will also read the local files in the same notebook.
 
 - There are various other cleaning steps that would be ideal for this dataset
   such as analysing the 6282 unique values for `paymentType`, validating
-  location data,
+  location data, and categorizing fields.
